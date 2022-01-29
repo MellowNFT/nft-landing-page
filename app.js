@@ -1,4 +1,5 @@
 //Countdown Timer
+/*
 const clockdiv = document.getElementById("countdown");
 const countDownTime = new Date(
   clockdiv.getAttribute("data-date")
@@ -22,7 +23,7 @@ const countdownfunction = setInterval(function () {
     clockdiv.querySelector(".seconds").innerHTML = seconds;
   }
 }, 1000);
-
+*/
 
 // METAMASK CONNECTION
 window.addEventListener('DOMContentLoaded', () => {
@@ -49,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
           method: 'eth_requestAccounts',
         })
         .then(function(accounts) {
-          onboardButton.innerText = `✔ ...${accounts[0].slice(-4)}`;
+          onboardButton.innerText = `Connected`;
           onboardButton.disabled = true;
         });
       };
